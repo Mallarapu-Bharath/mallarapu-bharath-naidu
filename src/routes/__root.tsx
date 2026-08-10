@@ -87,6 +87,12 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:site_name", content: "M. Bharath — Portfolio" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { property: "og:title", content: "M. Bharath | ECE Engineer | AI • IoT • Embedded Systems" },
+      { name: "twitter:title", content: "M. Bharath | ECE Engineer | AI • IoT • Embedded Systems" },
+      { property: "og:description", content: "Professional portfolio of M. Bharath showcasing Electronics and Communication Engineering, AI, IoT, Embedded Systems, projects, internships, certifications and achievements." },
+      { name: "twitter:description", content: "Professional portfolio of M. Bharath showcasing Electronics and Communication Engineering, AI, IoT, Embedded Systems, projects, internships, certifications and achievements." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/5c1f5f32c6df081c1cc45a65ef2c3439/id-preview-41f4537b--66556eeb-5d59-4d73-8962-25e15c9865fe.lovable.app-1786353818979.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/5c1f5f32c6df081c1cc45a65ef2c3439/id-preview-41f4537b--66556eeb-5d59-4d73-8962-25e15c9865fe.lovable.app-1786353818979.png" },
     ],
     links: [
       {
