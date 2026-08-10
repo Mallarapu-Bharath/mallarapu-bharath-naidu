@@ -44,7 +44,8 @@ function Node({
           anchorX="center"
           anchorY="bottom"
           letterSpacing={0.12}
-several          outlineWidth={0}
+          outlineWidth={0}
+
         >
           {node.label}
         </Text>
