@@ -36,7 +36,7 @@ export default function HeroScene() {
       className="relative h-[360px] w-full touch-none select-none sm:h-[460px] lg:h-[560px]"
     >
       <Canvas
-        camera={{ position: [0, 0.2, 7.2], fov: 45 }}
+        camera={{ position: [0, 0.2, 8], fov: 45 }}
         dpr={isMobile ? [1, 1.5] : [1, 2]}
         gl={{ antialias: !isMobile, powerPreference: "high-performance" }}
       >
