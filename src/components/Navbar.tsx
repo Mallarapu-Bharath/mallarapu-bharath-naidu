@@ -93,7 +93,7 @@ export function Navbar() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -12 }}
             transition={{ duration: 0.22 }}
-            className="max-h-[calc(100dvh-4rem)] overflow-y-auto border-t border-border bg-background/95 backdrop-blur-xl xl:hidden"
+            className="max-h-[calc(100dvh-4rem)] overflow-y-auto border-t border-border bg-background shadow-2xl xl:hidden"
           >
             <ul className="mx-auto flex w-full max-w-7xl flex-col gap-1 px-5 py-4">
               {navLinks.map((l) => (
