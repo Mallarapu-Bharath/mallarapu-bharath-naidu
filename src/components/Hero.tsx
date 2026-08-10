@@ -21,7 +21,7 @@ export function Hero() {
   useEffect(() => setMounted(true), []);
 
   const item = (delay: number) => ({
-    initial: reduce ? undefined : { opacity: 0, y: 24 },
+    initial: reduce ? false : { opacity: 0, y: 24 },
     animate: { opacity: 1, y: 0 },
     transition: { duration: 0.7, delay, ease: [0.22, 1, 0.36, 1] as const },
   });
@@ -106,7 +106,7 @@ export function Hero() {
         </div>
 
         <motion.div
-          initial={reduce ? undefined : { opacity: 0, scale: 0.94 }}
+          initial={reduce ? false : { opacity: 0, scale: 0.94 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.9, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
           className="relative overflow-hidden rounded-2xl border border-border/70 glass"

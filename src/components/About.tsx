@@ -20,7 +20,7 @@ export function About() {
 
         <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-1">
           {about.highlights.map((h, i) => {
-            const Icon = icons[i % icons.length];
+            const Icon = icons[i % icons.length] ?? Brain;
             return (
               <Reveal key={h.title} delay={i * 0.06}>
                 <div className="flex items-start gap-3 rounded-xl glass glass-hover p-4">
