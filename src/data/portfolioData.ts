@@ -146,21 +146,13 @@ export const projects: Project[] = [
       "Remote operations tracking",
     ],
     architecture: null,
-    images: [],
-    docs: [
-      { label: "Project Report", path: "/projects/farming-robot/report.pdf", available: false },
-      {
-        label: "Presentation",
-        path: "/projects/farming-robot/presentation.pdf",
-        available: false,
-      },
-      {
-        label: "Documentation",
-        path: "/projects/farming-robot/documentation.pdf",
-        available: false,
-      },
+    images: [
+      { src: farmingRobotImg, alt: "Autonomous IoT farming robot spraying crops in a field at night" },
     ],
-    github: null,
+    docs: [
+      { label: "Project Files (Drive)", path: DRIVE_PROJECTS_LINK, available: true },
+    ],
+    github: profileGithub,
     liveDemo: null,
   },
   {
@@ -182,9 +174,11 @@ export const projects: Project[] = [
       "Prevention of unauthorized access",
     ],
     architecture: null,
-    images: [],
-    docs: [{ label: "Project Report", path: "/projects/rfid-engine/report.pdf", available: false }],
-    github: null,
+    images: [
+      { src: rfidEngineImg, alt: "RFID card being tapped on a reader module wired near a car ignition" },
+    ],
+    docs: [{ label: "Project Files (Drive)", path: DRIVE_PROJECTS_LINK, available: true }],
+    github: profileGithub,
     liveDemo: null,
   },
   {
@@ -201,11 +195,14 @@ export const projects: Project[] = [
     contribution: null,
     features: ["Real-time video monitoring", "Baby surveillance", "Live feed", "Remote alerts"],
     architecture: null,
-    images: [],
-    docs: [{ label: "Project Report", path: "/projects/baby-monitor/report.pdf", available: false }],
-    github: null,
+    images: [
+      { src: babyMonitorImg, alt: "Raspberry Pi camera beside a crib with a live baby video feed on a tablet" },
+    ],
+    docs: [{ label: "Project Files (Drive)", path: DRIVE_PROJECTS_LINK, available: true }],
+    github: profileGithub,
     liveDemo: null,
   },
+
 ];
 
 export const education = [
