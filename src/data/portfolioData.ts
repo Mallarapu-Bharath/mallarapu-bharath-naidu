@@ -10,6 +10,15 @@
  * corresponding `available: true` flag.
  */
 
+import resumeAsset from "@/assets/Bharath_Resume.pdf.asset.json";
+import farmingRobotImg from "@/assets/project-farming-robot.jpg";
+import rfidEngineImg from "@/assets/project-rfid-engine.jpg";
+import babyMonitorImg from "@/assets/project-baby-monitor.jpg";
+
+/** Shared Google Drive folder holding project documents. */
+const DRIVE_PROJECTS_LINK =
+  "https://drive.google.com/drive/project/1gmYEGtSVuLNRaWV2apQJHsaV9ucMZMg_?usp=sharing";
+
 export const profile = {
   name: "M. BHARATH",
   initial: "B",
@@ -22,20 +31,16 @@ export const profile = {
   phoneHref: "tel:+919398191840",
   email: "mallarapubharathnaidu@gmail.com",
   emailHref: "mailto:mallarapubharathnaidu@gmail.com",
-  /** Add your real profile URLs here to reveal the buttons. */
-  linkedin: null as string | null,
-  github: null as string | null,
+  linkedin: "https://www.linkedin.com/in/bharath-mallarapu" as string | null,
+  github: "https://github.com/Mallarapu-Bharath" as string | null,
 };
 
-/**
- * RESUME
- * Place your PDF at:  public/resume/Bharath_Resume.pdf
- * Then set `available: true` below.
- */
+/** Resume PDF (uploaded, served from CDN). */
 export const resume = {
-  path: "/resume/Bharath_Resume.pdf",
-  available: false,
+  path: resumeAsset.url,
+  available: true,
 };
+
 
 export const about = {
   heading: "ABOUT ME",
@@ -141,21 +146,13 @@ export const projects: Project[] = [
       "Remote operations tracking",
     ],
     architecture: null,
-    images: [],
-    docs: [
-      { label: "Project Report", path: "/projects/farming-robot/report.pdf", available: false },
-      {
-        label: "Presentation",
-        path: "/projects/farming-robot/presentation.pdf",
-        available: false,
-      },
-      {
-        label: "Documentation",
-        path: "/projects/farming-robot/documentation.pdf",
-        available: false,
-      },
+    images: [
+      { src: farmingRobotImg, alt: "Autonomous IoT farming robot spraying crops in a field at night" },
     ],
-    github: null,
+    docs: [
+      { label: "Project Files (Drive)", path: DRIVE_PROJECTS_LINK, available: true },
+    ],
+    github: "https://github.com/Mallarapu-Bharath",
     liveDemo: null,
   },
   {
@@ -177,9 +174,11 @@ export const projects: Project[] = [
       "Prevention of unauthorized access",
     ],
     architecture: null,
-    images: [],
-    docs: [{ label: "Project Report", path: "/projects/rfid-engine/report.pdf", available: false }],
-    github: null,
+    images: [
+      { src: rfidEngineImg, alt: "RFID card being tapped on a reader module wired near a car ignition" },
+    ],
+    docs: [{ label: "Project Files (Drive)", path: DRIVE_PROJECTS_LINK, available: true }],
+    github: "https://github.com/Mallarapu-Bharath",
     liveDemo: null,
   },
   {
@@ -196,11 +195,14 @@ export const projects: Project[] = [
     contribution: null,
     features: ["Real-time video monitoring", "Baby surveillance", "Live feed", "Remote alerts"],
     architecture: null,
-    images: [],
-    docs: [{ label: "Project Report", path: "/projects/baby-monitor/report.pdf", available: false }],
-    github: null,
+    images: [
+      { src: babyMonitorImg, alt: "Raspberry Pi camera beside a crib with a live baby video feed on a tablet" },
+    ],
+    docs: [{ label: "Project Files (Drive)", path: DRIVE_PROJECTS_LINK, available: true }],
+    github: "https://github.com/Mallarapu-Bharath",
     liveDemo: null,
   },
+
 ];
 
 export const education = [
