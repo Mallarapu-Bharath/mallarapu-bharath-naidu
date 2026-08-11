@@ -152,7 +152,7 @@ export const projects: Project[] = [
     docs: [
       { label: "Project Files (Drive)", path: DRIVE_PROJECTS_LINK, available: true },
     ],
-    github: profileGithub,
+    github: "https://github.com/Mallarapu-Bharath",
     liveDemo: null,
   },
   {
@@ -178,7 +178,7 @@ export const projects: Project[] = [
       { src: rfidEngineImg, alt: "RFID card being tapped on a reader module wired near a car ignition" },
     ],
     docs: [{ label: "Project Files (Drive)", path: DRIVE_PROJECTS_LINK, available: true }],
-    github: profileGithub,
+    github: "https://github.com/Mallarapu-Bharath",
     liveDemo: null,
   },
   {
@@ -199,7 +199,7 @@ export const projects: Project[] = [
       { src: babyMonitorImg, alt: "Raspberry Pi camera beside a crib with a live baby video feed on a tablet" },
     ],
     docs: [{ label: "Project Files (Drive)", path: DRIVE_PROJECTS_LINK, available: true }],
-    github: profileGithub,
+    github: "https://github.com/Mallarapu-Bharath",
     liveDemo: null,
   },
 
