@@ -10,6 +10,15 @@
  * corresponding `available: true` flag.
  */
 
+import resumeAsset from "@/assets/Bharath_Resume.pdf.asset.json";
+import farmingRobotImg from "@/assets/project-farming-robot.jpg";
+import rfidEngineImg from "@/assets/project-rfid-engine.jpg";
+import babyMonitorImg from "@/assets/project-baby-monitor.jpg";
+
+/** Shared Google Drive folder holding project documents. */
+const DRIVE_PROJECTS_LINK =
+  "https://drive.google.com/drive/project/1gmYEGtSVuLNRaWV2apQJHsaV9ucMZMg_?usp=sharing";
+
 export const profile = {
   name: "M. BHARATH",
   initial: "B",
@@ -22,20 +31,16 @@ export const profile = {
   phoneHref: "tel:+919398191840",
   email: "mallarapubharathnaidu@gmail.com",
   emailHref: "mailto:mallarapubharathnaidu@gmail.com",
-  /** Add your real profile URLs here to reveal the buttons. */
-  linkedin: null as string | null,
-  github: null as string | null,
+  linkedin: "https://www.linkedin.com/in/bharath-mallarapu" as string | null,
+  github: "https://github.com/Mallarapu-Bharath" as string | null,
 };
 
-/**
- * RESUME
- * Place your PDF at:  public/resume/Bharath_Resume.pdf
- * Then set `available: true` below.
- */
+/** Resume PDF (uploaded, served from CDN). */
 export const resume = {
-  path: "/resume/Bharath_Resume.pdf",
-  available: false,
+  path: resumeAsset.url,
+  available: true,
 };
+
 
 export const about = {
   heading: "ABOUT ME",
