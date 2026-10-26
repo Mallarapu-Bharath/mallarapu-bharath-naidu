@@ -14,10 +14,12 @@ function stripTsdSourceIn3D(): Plugin {
   return {
     name: "lovable-strip-tsd-source-in-3d",
     apply: "serve",
-    transform(code, id) {
-      console.log("[strip-tsd] transform", id);
-      if (!id.includes("src/components/3d") || !code.includes("data-tsd-source")) return null;
-      return { code: code.replace(/ data-tsd-source="[^"]*"/g, ""), map: null };
+    transform: {
+      order: "post",
+      handler(code, id) {
+        if (!id.includes("src/components/3d") || !code.includes("data-tsd-source")) return null;
+        return { code: code.replace(/[ ]?data-tsd-source="[^"]*"/g, ""), map: null };
+      },
     },
   };
 }
