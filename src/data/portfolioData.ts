@@ -59,7 +59,7 @@ export const about = {
 
 export const skills = [
   { group: "Programming", items: ["Python", "SQL"] },
-  { group: "Tools", items: ["MATLAB", "VS Code"] },
+  { group: "Tools", items: ["VS Code", "MATLAB", "Antigravity"] },
   {
     group: "Technologies",
     items: ["Embedded Systems", "IoT", "Python Full Stack", "RAG Framework"],
