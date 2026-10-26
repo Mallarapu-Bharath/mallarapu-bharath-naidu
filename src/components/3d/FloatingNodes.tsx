@@ -6,9 +6,10 @@ import * as THREE from "three";
 const NODES = [
   { label: "AI", color: "#22d3ee", radius: 2.3, y: 0.9, speed: 0.28, phase: 0 },
   { label: "IoT", color: "#38bdf8", radius: 2.15, y: -0.3, speed: 0.23, phase: 1.25 },
-  { label: "CODE", color: "#818cf8", radius: 2.45, y: 1.5, speed: 0.19, phase: 2.5 },
-  { label: "ROBOTICS", color: "#a78bfa", radius: 2.25, y: -1.35, speed: 0.21, phase: 3.7 },
-  { label: "EMBEDDED", color: "#67e8f9", radius: 2.5, y: 0.15, speed: 0.16, phase: 5 },
+  { label: "PYTHON", color: "#818cf8", radius: 2.45, y: 1.5, speed: 0.19, phase: 2.5 },
+  { label: "EMBEDDED SYSTEM", color: "#a78bfa", radius: 2.25, y: -1.35, speed: 0.21, phase: 3.7 },
+  { label: "MYSQL", color: "#67e8f9", radius: 2.3, y: -0.55, speed: 0.2, phase: 4.3 },
+  { label: "CODE", color: "#f472b6", radius: 2.5, y: 0.15, speed: 0.16, phase: 5 },
 ];
 
 function Node({
