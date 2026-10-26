@@ -209,19 +209,16 @@ export const education = [
   {
     institution: "R.M.K Engineering College",
     qualification: "B.E Electronics and Communication Engineering",
-    score: "CGPA: 7.3",
     period: "2022–2026",
   },
   {
     institution: "Sri Chaitanya Higher Secondary School",
     qualification: "Higher Secondary Education",
-    score: "70.8%",
     period: "2020–2022",
   },
   {
     institution: "Bhashyam Secondary School",
     qualification: "Secondary Education",
-    score: "99%",
     period: "2019–2020",
   },
 ];

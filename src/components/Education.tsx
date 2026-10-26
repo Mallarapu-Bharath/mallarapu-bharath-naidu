@@ -28,9 +28,6 @@ export function Education() {
                     <div>
                       <h3 className="font-display text-base font-semibold">{e.institution}</h3>
                       <p className="mt-1 text-sm text-muted-foreground">{e.qualification}</p>
-                      <p className="mt-2 inline-block rounded-md border border-cyan/25 bg-cyan/10 px-2.5 py-1 font-mono text-[0.65rem] tracking-[0.1em] text-cyan">
-                        {e.score}
-                      </p>
                     </div>
                   </div>
                   <p className="font-mono text-[0.7rem] tracking-[0.18em] text-muted-foreground">
