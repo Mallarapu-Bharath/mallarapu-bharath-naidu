@@ -22,7 +22,7 @@ const DRIVE_PROJECTS_LINK =
 export const profile = {
   name: "M. BHARATH",
   initial: "B",
-  role: "ECE ENGINEER",
+  role: "PYTHON FULL STACK DEVELOPER",
   techLine: "AI • IoT • EMBEDDED SYSTEMS",
   greeting: "HELLO, I'M",
   summary:
