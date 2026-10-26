@@ -62,7 +62,7 @@ export const skills = [
   { group: "Tools", items: ["MATLAB", "VS Code"] },
   {
     group: "Technologies",
-    items: ["Embedded Systems", "IoT", "Digital Electronics", "RAG Framework"],
+    items: ["Embedded Systems", "IoT", "Python Full Stack", "RAG Framework"],
   },
   { group: "Soft Skills", items: ["Leadership", "Problem Solving", "Communication", "Teamwork"] },
 ];
